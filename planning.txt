@@ -1,0 +1,43 @@
+--  What we are making 
+->  Voting application, a funcationality where user can give vote to the given set of candidates
+
+==  Models?
+==  Routes?
+
+-- Voting app funcationality ?
+1.  user sign in/ up
+2.  see the list of candidate
+3.  vote ownces of the candidate, after voting user can't vote again
+4.   
+
+
+
+
+
+
+
+
+
+=======================
+
+    Routes
+    ------
+User Authentication:
+    /signup: POST - create a new user account.
+    /login: POST - login to an existing account. [aadhar card number + password]
+
+Voting:
+    /candidate: GET - get the list of candidate
+    /vote/:candidate : POST - vote for a specific candidate
+
+vote Counts:
+/vote/counts : Get the list of candidate sorted by thir vote counts
+
+User Profile:
+    /Profile: GET - get the user's Profile information
+    /Profile/password: PUT - change the user's password
+
+Admin candidate Management:
+    /candidate: POST - Createg a new candidate
+    /candidate/:candidateId: PUT - update an existing candidate
+    /candidate/:candidateId: DELETE - DELETE a candidate from list.
